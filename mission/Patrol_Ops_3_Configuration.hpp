@@ -26,15 +26,15 @@ PO3_preDefinedEnemySquads = [
 */
 /* CSAT Forces */
 	 ["EN_GroupForce_0", ["O_Soldier_TL_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_AAR_F"]]	// Fireteam 0
-	,["EN_GroupForce_1", ["O_Soldier_TL_F","O_Soldier_GL_F","O_Soldier_AT_F","O_Soldier_AAT_F"]]	// Fireteam 1
-	,["EN_GroupForce_2", ["O_Soldier_TL_F","O_Soldier_GL_F","O_Soldier_AT_F","O_Soldier_LAT_F"]]	// Fireteam 2
+	,["EN_GroupForce_1", ["O_Soldier_TL_F","O_Soldier_GL_F","O_Soldier_LAT_F","O_soldierU_M_F"]]	// Fireteam 1
+	,["EN_GroupForce_2", ["O_Soldier_TL_F","O_Soldier_GL_F","O_Soldier_AT_F","O_Soldier_AAT_F"]]	// Fireteam 2
 	,["EN_GroupForce_3", ["O_Soldier_TL_F","O_Soldier_GL_F","O_G_Soldier_lite_F","O_soldierU_medic_F"]]	// Fireteam 3
 	,["EN_GroupForce_4", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_AR_F","O_Soldier_AAR_F"]]		// Fireteam 4
 	,["EN_GroupForce_5", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_LAT_F","O_Soldier_F"]]			// Fireteam 5
-	,["EN_GroupForce_6", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_AT_F","O_soldier_exp_F"]]		// Fireteam 6
+	,["EN_GroupForce_6", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_LAT_F","O_soldier_exp_F"]]		// Fireteam 6
 	,["EN_GroupForce_7", ["O_Soldier_TL_F","O_Soldier_F","O_G_Soldier_lite_F","O_Soldier_LAT_F"]]	// Fireteam 7
-	,["EN_GroupForce_8", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_AAA_F","O_Soldier_A_F"]]			// Fireteam 8
-	,["EN_GroupForce_9", ["O_Soldier_TL_F","O_Soldier_F","O_Soldier_A_F","O_Soldier_LAT_F"]]		// Fireteam 9
+	,["EN_GroupForce_8", ["O_Soldier_TL_F","O_Soldier_F","O_soldierU_AA_F","O_Soldier_A_F"]]			// Fireteam 8
+	,["EN_GroupForce_9", ["O_Soldier_TL_F","O_Soldier_F","O_soldierU_M_F","O_Soldier_LAT_F"]]		// Fireteam 9
 	,["EN_PatrolGroup0", ["O_recon_TL_F","O_recon_F","O_recon_LAT_F","O_recon_M_F"]]				// Fireteam Recon 0
 	,["EN_PatrolGroup1", ["O_recon_TL_F","O_recon_F","O_recon_LAT_F","O_recon_medic_F"]]			// Fireteam Recon 1
 	,["EN_PatrolGroup2", ["O_recon_TL_F","O_recon_JTAC_F","O_recon_M_F","O_recon_exp_F"]]			// Fireteam Recon 2
@@ -216,7 +216,7 @@ PO3_CfgLogistics_UnitLoadouts = [
 		,[/*Weapons*/
 				"MineDetector","arifle_SDAR_F"
 			/*NATO*/
-				,"hgun_P07_F","hgun_Pistol_heavy_01_F","arifle_MX_Black_F","arifle_MX_SW_Black_F","arifle_MX_F","arifle_MX_SW_F","LMG_Mk200_F"
+				,"hgun_P07_F","hgun_Pistol_heavy_01_F","arifle_MX_Black_F","arifle_MX_SW_Black_F","arifle_MX_F","arifle_MX_SW_F","LMG_Mk200_F","LMG_Zafir_F"
 			/*CSAT*/
 		//		,"hgun_Rook40_F","hgun_Pistol_heavy_02_F","arifle_Katiba_C_F","arifle_Katiba_F","LMG_Zafir_F"
 			/*AAF*/
@@ -227,7 +227,7 @@ PO3_CfgLogistics_UnitLoadouts = [
 				,"HandGrenade","SmokeShell","SmokeShellYellow","SmokeShellGreen","SmokeShellRed","SmokeShellPurple","SmokeShellOrange","SmokeShellBlue","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","B_IR_Grenade","I_IR_Grenade","O_IR_Grenade"
 				,"Titan_AA","Titan_AP","Titan_AT"
 			/*NATO*/
-				,"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box_Tracer","NLAW_F"
+				,"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box_Tracer","NLAW_F", "150Rnd_762x51_Box", "150Rnd_762x51_Box_Tracer"
 			/*CSAT*/
 		//		,"150Rnd_762x51_Box","150Rnd_762x51_Box_Tracer","RPG32_F","RPG32_HE_F"
 			/*AAF*/
@@ -323,7 +323,7 @@ PO3_CfgLogistics_UnitLoadouts = [
 				"MineDetector","arifle_SDAR_F"
 			/*NATO*/
 				,"hgun_P07_F","hgun_Pistol_heavy_01_F","arifle_MX_Black_F","arifle_MXC_Black_F","arifle_MXM_Black_F","arifle_MX_F","arifle_MXC_F","arifle_MXM_F","srifle_EBR_F","srifle_LRR_F","SMG_01_F"
-				,"launch_NLAW_F"
+				,"launch_NLAW_F", "srifle_DMR_01_F"
 			/*CSAT*/
 		//		,"hgun_Rook40_F","hgun_Pistol_heavy_02_F","arifle_Katiba_C_F","arifle_Katiba_F","srifle_DMR_01_F","srifle_GM6_F","SMG_02_F"
 		//		,"launch_RPG32_F"
@@ -336,7 +336,7 @@ PO3_CfgLogistics_UnitLoadouts = [
 				,"HandGrenade","SmokeShell","SmokeShellYellow","SmokeShellGreen","SmokeShellRed","SmokeShellPurple","SmokeShellOrange","SmokeShellBlue","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","B_IR_Grenade","I_IR_Grenade","O_IR_Grenade"
 				,"Titan_AA","Titan_AP","Titan_AT"
 			/*NATO*/
-				,"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box_Tracer","NLAW_F"
+				,"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box_Tracer","NLAW_F", "10Rnd_762x51_Mag"
 			/*CSAT*/
 		//		,"150Rnd_762x51_Box","150Rnd_762x51_Box_Tracer","RPG32_F","RPG32_HE_F"
 			/*AAF*/
@@ -374,9 +374,9 @@ PO3_CfgLogistics_UnitLoadouts = [
 	],
 	["Support"
 		,[/*Weapons*/
-				"MineDetector","arifle_SDAR_F"
+				"MineDetector"
 			/*NATO*/
-				,"hgun_P07_F","hgun_Pistol_heavy_01_F","arifle_MX_Black_F","arifle_MX_GL_Black_F","arifle_MX_F","arifle_MX_GL_F","SMG_01_F"
+				,"hgun_P07_F","hgun_Pistol_heavy_01_F","arifle_MX_GL_F","arifle_MXC_F","SMG_01_F", "SMG_02_F", "hgun_PDW2000_F"
 				,"launch_NLAW_F"
 			/*CSAT*/
 		//		,"hgun_Rook40_F","hgun_Pistol_heavy_02_F","arifle_Katiba_C_F","arifle_Katiba_F","arifle_Katiba_GL_F","SMG_02_F"
@@ -429,7 +429,7 @@ PO3_CfgLogistics_UnitLoadouts = [
 ];
 
 PO3_CfgLogistics_UnitLoadoutBlacklist = [
-	 "optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS"
+	 "optic_Nightstalker","optic_tws","optic_tws_mg"
 	,"G_Lady_Blue","G_Lady_Dark","G_Lady_Mirror","G_Lady_Red","G_Shades_Green"
 	,"G_Spectacles","G_Spectacles_Tinted"
 	,"G_Sport_Blackred","G_Sport_BlackWhite","G_Sport_Blackyellow","G_Sport_Checkered"
@@ -440,6 +440,7 @@ PO3_CfgLogistics_UnitLoadoutBlacklist = [
 // Vehicle CAPACITY that can TOW, LIFT or LOAD
 PO3_CfgLogistics_Loadable = [
 	 ["Cargo_base_F",15200]
+	,["I_Heli_Transport_02_F", 64000] //Make the mowhawk able to lift tanks. Needs to be listed before base class.
 	,["B_Truck_01_mover_F",0]
 	,["B_Truck_01_transport_F",64000]
 	,["O_Truck_02_transport_F",64000]

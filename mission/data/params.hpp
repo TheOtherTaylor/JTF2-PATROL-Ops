@@ -26,16 +26,16 @@ class PO3_param_missions_title {
 		title = "Mission Difficulty";
 		values[]={1,3,4,6};
 		texts[]={$STR_PO3_TEXT_LOW,$STR_PO3_TEXT_MED,$STR_PO3_TEXT_HIGH,$STR_PO3_TEXT_ULTRA};
-		default=2;
+		default=3;
 		code = "PO3_param_missionskill = (%1/3);";
 	};
-	/*class param_PO3_ai_skill {
+	class param_PO3_ai_skill {
 		title = $STR_PO3_PARAM_SETAISKILL;
-		values[]={1,2,3,4};
-		texts[]={$STR_PO3_TEXT_LOW,$STR_PO3_TEXT_MED,$STR_PO3_TEXT_HIGH,$STR_PO3_TEXT_ULTRA};
-		default=1;
-		code = "PO3_param_ai_skill = 0.8 + log((%1)/4)";
-	};*/
+		values[]={1,2,3,4,99};
+		texts[]={$STR_PO3_TEXT_LOW,$STR_PO3_TEXT_MED,$STR_PO3_TEXT_HIGH,$STR_PO3_TEXT_ULTRA,"ASR_AI3 Settings"};
+		default=99;
+		code = "PO3_param_ai_skill = if(%1<99)then{0.8 + log((%1)/4)}else{-1};";
+	};
 	class param_PO3_ai_Tkill {
 		title = $STR_PO3_PARAM_SETAITKILL;
 		values[]={0,1};
@@ -61,7 +61,7 @@ class PO3_param_ambient_title {
 		title = "Ambient Ground Patrols";
 		values[]={0,400,600,800,1200};
 		texts[]={$STR_PO3_TEXT_OFF,$STR_PO3_TEXT_LOW,$STR_PO3_TEXT_MED,$STR_PO3_TEXT_HIGH,$STR_PO3_TEXT_ULTRA};
-		default=400;
+		default=0;
 		code = "PO3_param_ambientpatrolgnd = if(%1 > 0)then{ PO3_count_ambientpatrolgnd = %1; true}else{false};";
 	};
 	class param_PO3_ambientradius {

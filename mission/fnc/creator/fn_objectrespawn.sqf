@@ -32,7 +32,8 @@ waitUntil {
 			_destroyed = if( time - _dead > _timeD ) then { true }else{ false };
 
 			// Check if Vehicle Abandoned
-			_empty = if( {alive _vehicle} count (crew _vehicle) == 0 && _pos distance (_vehicle call PO3_fnc_getPos) > 10 ) then { _empty }else{ time };
+			_empty = if({alive _vehicle} count (crew _vehicle) == 0 && _pos distance (_vehicle call PO3_fnc_getPos) > 10 ) then { _empty }else{ time };
+			_empty = if(not isNull (ropeAttachedTo _vehicle)) then { time } else { _empty }; //If a vehicle is being lifted it doesn't count as being abandoned
 			_abandoned = if( time - _empty > _timeA ) then { true }else{ false };
 
 			// Get PO3 Variables
@@ -63,6 +64,19 @@ waitUntil {
 					if(!isNil "_isLCH") then { _vehicle setVariable ["PO3_liftchopper",_isLCH,true] };
 					if(!isNil "_isLFT") then { _vehicle setVariable ["PO3_liftable",_isLFT,true] };
 					if(!isNil "_isRSP") then { _vehicle setVariable ["PO3_resupply",_isRSP,true] };
+					
+					if (_vehicle isKindOf "Heli_Transport_02_base_F") then
+					{
+						// Mowhawk variants
+						_vehicle setObjectTextureGlobal [0, "customSkins\CH148_0.paa"];
+						_vehicle setObjectTextureGlobal [1, "customSkins\CH148_1.paa"];
+						_vehicle setObjectTextureGlobal [2, "customSkins\CH148_2.paa"];
+					};
+					if (_vehicle isKindOf "I_Heli_light_03_base_F") then
+					{
+						// Hellcats (armed an unarmed variants)
+						_vehicle setObjectTexture [0, "customSkins\CH146_0.paa"];
+					};
 				};
 			};
 
